@@ -1,8 +1,8 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mydep
-  nameSpace: argocd
+  namespace: argocd
 sepc:
   replicas: 7
   selector:
