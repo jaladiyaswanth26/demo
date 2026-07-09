@@ -7,11 +7,11 @@ sepc:
   replicas: 7
   selector:
     matchLabels:
-      app: argocd
+      app: latha
   template:
     metadata:
       labels:
-        app: argocd
+        app: latha
     spec:
       containers:
         - name: mydepcom
