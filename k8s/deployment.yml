@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: mydep
   namespace: argocd
-sepc:
+spec:
   replicas: 7
   selector:
     matchLabels:
@@ -17,5 +17,5 @@ sepc:
         - name: mydepcom
           image: shaikmustafa/paytm:movie
           ports:
-            -  containerPort: 80
+            - containerPort: 80
 
