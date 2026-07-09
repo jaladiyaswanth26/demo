@@ -1,0 +1,21 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: mydep
+  nameSpace: argocd
+sepc:
+  replicas: 7
+  selector:
+    matchLabels:
+      app: argocd
+  template:
+    metadata:
+      labels:
+        app: argocd
+    spec:
+      containers:
+        - name: mydepcom
+          image: shaikmustafa/paytm:movie
+          ports:
+            -  containerPort: 80
+
