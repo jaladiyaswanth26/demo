@@ -4,7 +4,7 @@ metadata:
   name: mydep
   namespace: argocd
 spec:
-  replicas: 7
+  replicas: 10
   selector:
     matchLabels:
       app: latha
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mydepcom
-          image: shaikmustafa/paytm:bus
+          image: shaikmustafa/paytm:movie
           ports:
             - containerPort: 80
 
