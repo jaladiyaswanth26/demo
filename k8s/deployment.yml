@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mydepcom
-          image: shaikmustafa/paytm:movie
+          image: shaikmustafa/paytm:bus
           ports:
             - containerPort: 80
 
